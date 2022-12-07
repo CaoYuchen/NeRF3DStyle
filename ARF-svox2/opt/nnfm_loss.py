@@ -117,10 +117,11 @@ class NNFMLoss(torch.nn.Module):
         super().__init__()
 
         self.vgg = torchvision.models.vgg16(pretrained=True).eval().to(device)
-        self.normalize = torchvision.transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        self.normalize = torchvision.transforms.Normalize(mean=torch.tensor([0.485, 0.456, 0.406]).cuda(), std=torch.tensor([0.229, 0.224, 0.225]).cuda())
 
     def get_feats(self, x, layers=[]):
         x = self.normalize(x)
+        x = x.unsqueeze(0)
         final_ix = max(layers)
         outputs = []
 
@@ -155,6 +156,7 @@ class NNFMLoss(torch.nn.Module):
             all_layers += block_indexes[block]
 
         x_feats_all = self.get_feats(outputs, all_layers)
+
         with torch.no_grad():
             s_feats_all = self.get_feats(styles, all_layers)
             if "content_loss" in loss_names:

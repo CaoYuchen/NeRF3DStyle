@@ -612,23 +612,23 @@ while True:
                     h_variance = torch.mean(torch.pow(rgb_pred[:, :, :-1, :] - rgb_pred[:, :, 1:, :], 2))
                     img_tv_loss = args.img_tv_weight * (h_variance + w_variance) / 2.0
                     loss_dict = nnfm_loss_fn(
-                        F.interpolate(
+                        outputs=F.interpolate(
                             rgb_pred,
                             size=None,
                             scale_factor=0.5,
                             mode="bilinear",
-                        ),
-                        style_img.permute(2, 0, 1).unsqueeze(0),
+                        ).squeeze(0),
+                        styles=style_img.permute(2, 0, 1),
                         blocks=[
                             args.vgg_block,
                         ],
                         loss_names=["nnfm_loss", "content_loss"],
-                        contents=F.interpolate(
+                        contents=torch.tensor(F.interpolate(
                             rgb_gt,
                             size=None,
                             scale_factor=0.5,
                             mode="bilinear",
-                        ),
+                        ).squeeze(0)),
                     )
                     loss_dict["content_loss"] *= args.content_weight
                     loss_dict["img_tv_loss"] = img_tv_loss
