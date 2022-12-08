@@ -2,6 +2,7 @@
 
 Our project consists of 2 sections: Neural Radiance Field exploration and Style Transfer.
 
+### Neural Radiance Field
 First, we explore the neural radiance field with [Instant-ngp](https://github.com/NVlabs/instant-ngp) for different purposes of tasks, with the datasets captured by ourselves.
 
 | Remove Background  |  Large Scale Scene |
@@ -15,6 +16,8 @@ We also measured the capability of the 3D mesh generation:
 | Mesh  |  Texture |
 |---|---|
 | ![mesh](/media/Snipaste_2022-11-29_13-17-48.jpg) |  ![texture](/media/Snipaste_2022-11-29_13-15-08.jpg)  |
+
+## Style Transfer
 
 Second, We experiment 3 methods to combine Style Transfer and Neural Radiance Field:
 - Apply style on the input of the NeRF
@@ -32,4 +35,6 @@ Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-t
 | Method 3 |  ![snow3](/media/scotty_arf_snow.mp4) | ![vangogh3](/media/scotty_arf_vangogh.mp4)  |
 
 
-
+### Reference:
+[1] Müller, T., Evans, A., Schied, C., & Keller, A. (2022, January 16). Instant neural graphics primitives with a multiresolution hash encoding. ArXiv.Org. https://arxiv.org/abs/2201.05989 
+[2] Zhang, K., Kolkin, N., Bi, S., Luan, F., Xu, Z., Shechtman, E., & Snavely, N. (2022). ARF: Artistic radiance fields. In Lecture Notes in Computer Science (pp. 717–733). Springer Nature Switzerland. http://dx.doi.org/10.1007/978-3-031-19821-2_41  
