@@ -30,11 +30,12 @@ Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-t
 | | Style 1  |  Style 2 |
 |-|---|---|
 | Style Images | <img src="/media/135.jpg" width="400">  | <img src="/media/14.jpg" width="400"> |
-| Method 1 | ![snow1](/media/scotty_style_before.mp4) | ![vangogh1](/media/scotty_style_short.mp4) |
-| Method 2 | ![snow2](/media/scotty_o_snow.mp4) | ![vangogh2](/media/scotty_o_vangogh.mp4) |
-| Method 3 |  ![snow3](/media/scotty_arf_snow.mp4) | ![vangogh3](/media/scotty_arf_vangogh.mp4)  |
+| Method 1 | ![snow1](/media/scotty_style_snow.gif) | ![vangogh1](/media/scotty_style_vangogh.gif) |
+| Method 2 | ![snow2](/media/scotty_o_snow.gif) | ![vangogh2](/media/scotty_o_vangogh.gif) |
+| Method 3 |  ![snow3](/media/scotty_arf_snow.gif) | ![vangogh3](/media/scotty_arf_vangogh.gif)  |
 
 
 ### Reference:
 [1] Müller, T., Evans, A., Schied, C., & Keller, A. (2022, January 16). Instant neural graphics primitives with a multiresolution hash encoding. ArXiv.Org. https://arxiv.org/abs/2201.05989 
+
 [2] Zhang, K., Kolkin, N., Bi, S., Luan, F., Xu, Z., Shechtman, E., & Snavely, N. (2022). ARF: Artistic radiance fields. In Lecture Notes in Computer Science (pp. 717–733). Springer Nature Switzerland. http://dx.doi.org/10.1007/978-3-031-19821-2_41  
