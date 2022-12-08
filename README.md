@@ -31,3 +31,5 @@ Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-t
 | Method 2 | ![snow2](/media/scotty_o_snow.mp4) | ![vangogh2](/media/scotty_o_vangogh.mp4) |
 | Method 3 |  ![snow3](/media/scotty_arf_snow.mp4) | ![vangogh3](/media/scotty_arf_vangogh.mp4)  |
 
+
+
