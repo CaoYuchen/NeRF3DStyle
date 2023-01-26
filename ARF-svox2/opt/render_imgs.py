@@ -172,7 +172,9 @@ with torch.no_grad():
     #  im_gt_all = dset.gt.to(device=device)
 
     for img_id in tqdm(range(0, n_images, img_eval_interval)):
-        dset_h, dset_w = dset.get_image_size(img_id)
+        # dset_h, dset_w = dset.get_image_size(img_id)
+        dset_h = 1080
+        dset_w = 1920
         im_size = dset_h * dset_w
         w = dset_w if args.crop == 1.0 else int(dset_w * args.crop)
         h = dset_h if args.crop == 1.0 else int(dset_h * args.crop)
