@@ -25,9 +25,9 @@ Second, We experiment 3 methods to combine Style Transfer and Neural Radiance Fi
 - Apply style on the input of the NeRF
 - Apply style on the output of the NeRF
 - Apply style on the latent space(middle) of the NeRF
-- Apply video-based style transfer to pre-process the dataset, then do the NeRF
+- Apply video-based style transfer to pre-process the dataset, as input of the NeRF
 
-Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-transfer-pytorch) on 2D images with Instant-ngp together, Method 3 uses stand-alone [Artistic Radiance Field](https://github.com/Kai-46/ARF-svox2).
+Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-transfer-pytorch) on 2D images with Instant-ngp together, Method 3 uses stand-alone [Artistic Radiance Field](https://github.com/Kai-46/ARF-svox2), Method 4 uses [EbSynth](https://ebsynth.com/) and [Video Style Transfer](https://github.com/manuelruder/fast-artistic-videos).
 
 
 | | Style 1  |  Style 2 |
