@@ -37,6 +37,12 @@ Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-t
 | Method 2 | ![snow2](/media/scotty_o_snow.gif) | ![vangogh2](/media/scotty_o_vangogh.gif) |
 | Method 3 |  ![snow3](/media/scotty_arf_snow.gif) | ![vangogh3](/media/scotty_arf_vangogh.gif)  |
 
+And in the end, the 3D style trasnfer is put in a VR envrionment for an immersive experience.
+
+| Style 1  |
+|--|
+| ![vr](/media/VR.gif) |
+
 
 ### Reference:
 [1] Müller, T., Evans, A., Schied, C., & Keller, A. (2022, January 16). Instant neural graphics primitives with a multiresolution hash encoding. ArXiv.Org. https://arxiv.org/abs/2201.05989 
