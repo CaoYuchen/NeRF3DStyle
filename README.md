@@ -1,14 +1,16 @@
 # Neural Radiance Field with Style Transfer
 
-This project consists of 2 sections: Neural Radiance Field exploration and Style Transfer.
+This project consists of 2 sections: Neural Radiance Field exploration and NeRF-based 3D Style Transfer.
 
 ### Neural Radiance Field
-First, we explore the neural radiance field with [Instant-ngp](https://github.com/NVlabs/instant-ngp) for different purposes of tasks, with the datasets captured by ourselves.
+First, we explore the neural radiance field with [Instant-ngp](https://github.com/NVlabs/instant-ngp) for different 3D tasks, with the datasets captured by ourselves.
 
 | Remove Background  |  Large Scale Scene |
 |---|---|
 | ![girl](/media/girl.gif)  | ![pink_road](/media/pink_road.gif)  |
+
 | Complex Surface  |  General Scene |
+|---|---|
 |  ![concrete](/media/concrete.gif) | ![scotty](/media/scotty.gif)  |
 
 We also measured the capability of the 3D mesh generation:
@@ -23,8 +25,9 @@ Second, We experiment 3 methods to combine Style Transfer and Neural Radiance Fi
 - Apply style on the input of the NeRF
 - Apply style on the output of the NeRF
 - Apply style on the latent space(middle) of the NeRF
+- Apply video-based style transfer to pre-process the dataset, as input of the NeRF
 
-Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-transfer-pytorch) on 2D images with Instant-ngp together, Method 3 uses stand-alone [Artistic Radiance Field](https://github.com/Kai-46/ARF-svox2).
+Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-transfer-pytorch) on 2D images with Instant-ngp together, Method 3 uses stand-alone [Artistic Radiance Field](https://github.com/Kai-46/ARF-svox2), Method 4 uses [EbSynth](https://ebsynth.com/) and [Video Style Transfer](https://github.com/manuelruder/fast-artistic-videos).
 
 
 | | Style 1  |  Style 2 |
