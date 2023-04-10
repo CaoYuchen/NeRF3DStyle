@@ -39,7 +39,7 @@ Method 1 and 2 uses [Neural Style Transfer](https://github.com/crowsonkb/style-t
 
 And in the end, the 3D style trasnfer is put in a VR envrionment for an immersive experience.
 
-| Style 1  |
+| VR Experience  |
 |--|
 | ![vr](/media/VR.gif) |
 
